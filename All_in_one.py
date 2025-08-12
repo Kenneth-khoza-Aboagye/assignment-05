@@ -1,3 +1,4 @@
+import math
 def check():
     num1 = int(input("Enter a number: "))
     num2 = int(input("Enter a second number: "))
@@ -5,10 +6,12 @@ def check():
     print(f"multiplied number is {sum}")
     for i in range(0,sum,num2):
         print(i)
-        if sum %1 == 0:
-            print("its not a prime number")
-        elif sum %1 != 1:
-            print("its a prime number")
+        if sum <= 1:
+            print("number is not an prime number")
+    for i in range(1,sum,2):
+        print(i)
+    if sum >= 1:
+        print("number is a prime number")
     for a in range(1,sum,1):
         print(a)
     if sum %2 == 0:
