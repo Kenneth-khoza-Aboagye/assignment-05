@@ -6,11 +6,11 @@ def check():
     print(f"multiplied number is {sum}")
     for i in range(0,sum,num2):
         print(i)
-        if sum <= 1:
-            print("number is not an prime number")
+    if sum <= 1:
+        print("number is not an prime number")
     for i in range(1,sum,2):
         print(i)
-    if sum >= 1:
+    if sum > 1:
         print("number is a prime number")
     for a in range(1,sum,1):
         print(a)
