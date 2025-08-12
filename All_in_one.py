@@ -6,6 +6,8 @@ def check():
     for i in range(0,sum,num2):
         print(i)
         if sum %1 == 0:
+            print("its not a prime number")
+        elif sum %1 != 1:
             print("its a prime number")
     for a in range(1,sum,1):
         print(a)
